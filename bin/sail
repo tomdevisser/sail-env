@@ -16,6 +16,7 @@ function usage() {
 	echo "	up			Start site containers (must be in site folder)"
 	echo "	down			Stop site containers (must be in site folder)"
 	echo "	sync [options]		Sync data from remote server (must be in site folder)"
+	echo "	wp <command>		Run WP-CLI commands (must be in site folder)"
 	echo "	site add <name>		Create a new local site"
 	echo "	site list		List all sites and their status"
 	echo "	site remove <name>	Remove an existing site"
@@ -65,6 +66,9 @@ case "$command" in
 		esac
 		;;
 
+	wp)
+		"$script_dir/cmd/wp.sh" "$@"
+		;;
 	*)
 		echo "Unknown command: $command"
 		usage
