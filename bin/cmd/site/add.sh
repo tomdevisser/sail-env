@@ -38,7 +38,11 @@ fi
 
 # Create folder structure
 log_info "Creating site structure in $site_dir..."
-mkdir -p "$site_dir/plugins" "$site_dir/theme" "$site_dir/uploads" "$site_dir/database"
+mkdir -p "$site_dir/plugins" "$site_dir/theme" "$site_dir/uploads" "$site_dir/database" "$site_dir/.vscode"
+
+# Copy VSCode launch template
+log_info "Configuring VSCode launch settings..."
+cp "$root_dir/config/.vscode/launch.template.json" "$site_dir/.vscode/launch.json"
 
 # Create sail.conf from template
 log_info "Generating sail.conf..."
