@@ -17,6 +17,7 @@ function usage() {
 	echo "	down			Stop site containers (must be in site folder)"
 	echo "	sync [options]		Sync data from remote server (must be in site folder)"
 	echo "	site add <name>		Create a new local site"
+	echo "	site list		List all sites and their status"
 	echo "	site remove <name>	Remove an existing site"
 	exit 1
 }
@@ -50,6 +51,9 @@ case "$command" in
 		case "$subcommand" in
 			add)
 				"$script_dir/cmd/site/add.sh" "$@"
+				;;
+			list)
+				"$script_dir/cmd/site/list.sh" "$@"
 				;;
 			remove)
 				"$script_dir/cmd/site/remove.sh" "$@"
