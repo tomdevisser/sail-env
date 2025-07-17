@@ -10,7 +10,9 @@ A containerized WordPress development environment using nginx + PHP-FPM architec
 - **nginx + PHP-FPM**: Production-ready architecture
 - **phpMyAdmin**: Database management for each site
 - **Simple Commands**: Easy-to-use CLI for site management
-- **Reverse Proxy**: Centralized SSL termination and routing
+- **Resilient Reverse Proxy**: Centralized SSL termination and routing with graceful handling of down sites
+- **Offline Page**: Beautiful offline page when sites are down instead of browser errors
+- **Remote Sync**: Sync WordPress core, database, plugins, and media from remote servers
 
 ## Requirements
 
@@ -101,6 +103,41 @@ cd sites/mysite
 ../../bin/sail down
 ```
 
+**Note**: The `down` command now checks if containers are running and will show an error if no containers are currently running for the site.
+
+### Offline Sites
+
+When a site is down, visiting its URL will show a beautiful offline page instead of browser errors. This means:
+
+- **No more proxy crashes** when some sites are down
+- **User-friendly offline page** with instructions to start the site
+- **Seamless experience** when sites come back online
+
+### Remote Sync
+
+Sync your local development site with a remote server:
+
+```bash
+cd sites/mysite
+../../bin/sail sync [options]
+```
+
+Sync options:
+- `--all` or no options: Sync everything (database, plugins, media, core)
+- `--db`: Sync database only
+- `--plugins`: Sync plugins only
+- `--media`: Sync media/uploads only
+- `--core`: Sync WordPress core only
+
+Combine options: `../../bin/sail sync --db --plugins`
+
+The sync command will:
+- Prompt for remote server credentials on first use
+- Save configuration to `sail.conf` for future use
+- Download and import remote database with URL replacements
+- Sync files using rsync over SSH
+- Update local WordPress core to match remote version
+
 ### Removing a Site
 
 ```bash
@@ -129,11 +166,20 @@ cd sites/mysite
 
 ### Container Details
 
-- **sail_proxy**: Main nginx reverse proxy handling SSL and routing
+- **sail_proxy**: Main nginx reverse proxy handling SSL and routing with resilient upstream handling
 - **nginx\_[site]**: Per-site nginx for static files and PHP-FPM communication
 - **wp\_[site]**: WordPress with PHP-FPM
 - **db\_[site]**: MySQL database for each site
 - **sail_phpmyadmin**: Shared phpMyAdmin instance
+
+### Proxy Resilience
+
+The nginx proxy is designed to handle sites being up or down gracefully:
+
+- **Dynamic DNS resolution**: Uses Docker's internal DNS resolver
+- **Graceful error handling**: Shows custom offline page when sites are down
+- **No startup failures**: Proxy starts even if some sites are offline
+- **Automatic recovery**: Sites work immediately when brought back online
 
 ## Directory Structure
 
@@ -144,6 +190,8 @@ sail/
 │   └── cmd/               # Command implementations
 ├── config/                # Configuration templates
 │   ├── nginx/             # nginx templates
+│   │   ├── html/          # Static files (offline page)
+│   │   └── *.template.conf # nginx configuration templates
 │   ├── docker/            # Docker Compose templates
 │   └── php/               # PHP configuration
 ├── dockerfiles/           # Custom Docker images
@@ -162,10 +210,11 @@ Each site in `sites/[sitename]/` contains:
 sites/mysite/
 ├── docker-compose.yml     # Site-specific containers
 ├── nginx.conf            # Site nginx configuration
-├── sail.conf             # Site configuration
+├── sail.conf             # Site configuration (includes remote sync settings)
 ├── xdebug.ini           # XDebug configuration
 ├── theme/               # Custom theme files
 ├── plugins/             # Custom plugins
+├── uploads/             # WordPress uploads/media
 └── database/            # MySQL data files
 ```
 

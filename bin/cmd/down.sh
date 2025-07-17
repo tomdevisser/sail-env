@@ -22,7 +22,15 @@ if [[ -z "$DOMAIN" ]]; then
 	exit 1
 fi
 
+# Check if containers are running
+running_containers=$(docker compose ps -q 2>/dev/null)
+
+if [[ -z "$running_containers" ]]; then
+	log_error "No containers are currently running for site $DOMAIN."
+	exit 1
+fi
+
 # Stop the site's containers
 log_info "Stopping site containers for $DOMAIN..."
-docker compose down
+docker compose down > /dev/null 2>&1
 log_success "Site $DOMAIN containers have been stopped."

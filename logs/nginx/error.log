@@ -928,3 +928,412 @@
 2025/07/17 14:02:11 [notice] 1#1: start worker process 24
 2025/07/17 14:02:11 [notice] 1#1: start worker process 25
 2025/07/17 14:02:11 [notice] 1#1: start worker process 26
+2025/07/17 17:50:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/17 17:50:33 [notice] 20#20: gracefully shutting down
+2025/07/17 17:50:33 [notice] 21#21: gracefully shutting down
+2025/07/17 17:50:33 [notice] 22#22: gracefully shutting down
+2025/07/17 17:50:33 [notice] 19#19: gracefully shutting down
+2025/07/17 17:50:33 [notice] 24#24: gracefully shutting down
+2025/07/17 17:50:33 [notice] 25#25: gracefully shutting down
+2025/07/17 17:50:33 [notice] 23#23: gracefully shutting down
+2025/07/17 17:50:33 [notice] 26#26: gracefully shutting down
+2025/07/17 17:50:33 [notice] 20#20: exiting
+2025/07/17 17:50:33 [notice] 21#21: exiting
+2025/07/17 17:50:33 [notice] 23#23: exiting
+2025/07/17 17:50:33 [notice] 26#26: exiting
+2025/07/17 17:50:33 [notice] 25#25: exiting
+2025/07/17 17:50:33 [notice] 24#24: exiting
+2025/07/17 17:50:33 [notice] 19#19: exiting
+2025/07/17 17:50:33 [notice] 21#21: exit
+2025/07/17 17:50:33 [notice] 22#22: exiting
+2025/07/17 17:50:33 [notice] 26#26: exit
+2025/07/17 17:50:33 [notice] 20#20: exit
+2025/07/17 17:50:33 [notice] 24#24: exit
+2025/07/17 17:50:33 [notice] 19#19: exit
+2025/07/17 17:50:33 [notice] 23#23: exit
+2025/07/17 17:50:33 [notice] 25#25: exit
+2025/07/17 17:50:33 [notice] 22#22: exit
+2025/07/17 17:50:33 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2025/07/17 17:50:33 [notice] 1#1: worker process 21 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: worker process 24 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: worker process 25 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: worker process 26 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: worker process 20 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: worker process 22 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 17:50:33 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/07/17 17:50:33 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/07/17 17:50:33 [notice] 1#1: worker process 23 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 17:50:33 [notice] 1#1: signal 17 (SIGCHLD) received from 19
+2025/07/17 17:50:33 [notice] 1#1: worker process 19 exited with code 0
+2025/07/17 17:50:33 [notice] 1#1: exit
+2025/07/17 17:50:33 [notice] 1#1: using the "epoll" event method
+2025/07/17 17:50:33 [notice] 1#1: nginx/1.28.0
+2025/07/17 17:50:33 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/17 17:50:33 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2025/07/17 17:50:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/17 17:50:33 [notice] 1#1: start worker processes
+2025/07/17 17:50:33 [notice] 1#1: start worker process 20
+2025/07/17 17:50:33 [notice] 1#1: start worker process 21
+2025/07/17 17:50:33 [notice] 1#1: start worker process 22
+2025/07/17 17:50:33 [notice] 1#1: start worker process 23
+2025/07/17 17:50:33 [notice] 1#1: start worker process 24
+2025/07/17 17:50:33 [notice] 1#1: start worker process 25
+2025/07/17 17:50:33 [notice] 1#1: start worker process 26
+2025/07/17 17:50:33 [notice] 1#1: start worker process 27
+2025/07/17 17:53:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/17 17:53:33 [notice] 24#24: gracefully shutting down
+2025/07/17 17:53:33 [notice] 20#20: gracefully shutting down
+2025/07/17 17:53:33 [notice] 22#22: gracefully shutting down
+2025/07/17 17:53:33 [notice] 21#21: gracefully shutting down
+2025/07/17 17:53:33 [notice] 23#23: gracefully shutting down
+2025/07/17 17:53:33 [notice] 21#21: exiting
+2025/07/17 17:53:33 [notice] 27#27: gracefully shutting down
+2025/07/17 17:53:33 [notice] 26#26: gracefully shutting down
+2025/07/17 17:53:33 [notice] 25#25: gracefully shutting down
+2025/07/17 17:53:33 [notice] 24#24: exiting
+2025/07/17 17:53:33 [notice] 20#20: exiting
+2025/07/17 17:53:33 [notice] 22#22: exiting
+2025/07/17 17:53:33 [notice] 23#23: exiting
+2025/07/17 17:53:33 [notice] 21#21: exit
+2025/07/17 17:53:33 [notice] 27#27: exiting
+2025/07/17 17:53:33 [notice] 26#26: exiting
+2025/07/17 17:53:33 [notice] 27#27: exit
+2025/07/17 17:53:33 [notice] 25#25: exiting
+2025/07/17 17:53:33 [notice] 24#24: exit
+2025/07/17 17:53:33 [notice] 20#20: exit
+2025/07/17 17:53:33 [notice] 22#22: exit
+2025/07/17 17:53:33 [notice] 23#23: exit
+2025/07/17 17:53:33 [notice] 26#26: exit
+2025/07/17 17:53:33 [notice] 25#25: exit
+2025/07/17 17:53:33 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/07/17 17:53:33 [notice] 1#1: worker process 20 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: worker process 21 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: worker process 22 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: worker process 24 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: worker process 26 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: worker process 27 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 17:53:33 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2025/07/17 17:53:33 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/07/17 17:53:33 [notice] 1#1: worker process 23 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/07/17 17:53:33 [notice] 1#1: worker process 25 exited with code 0
+2025/07/17 17:53:33 [notice] 1#1: exit
+2025/07/17 17:53:34 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:34 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:34 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:35 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:36 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:37 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:41 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:47 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:53 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:54 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:54 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:55 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:55 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:53:57 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:54:00 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:54:07 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:54:20 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:54:46 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:55:37 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:03 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:04 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:04 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:04 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:05 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:07 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:10 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:17 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:30 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:56:56 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:57:47 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:47 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:49 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:49 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:50 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:50 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:51 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:53 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:58:56 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:59:03 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:59:16 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 17:59:41 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:15 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:15 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:15 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:16 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:16 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:18 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:22 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:28 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:00:41 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:01:07 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:01:58 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:16 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:17 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:17 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:17 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:18 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:20 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:23 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:02:30 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:9
+2025/07/17 18:05:45 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:45 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:45 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:46 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:47 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:48 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:52 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:05:58 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:06:11 [emerg] 1#1: host not found in upstream "nginx_kidsproof-nl:80" in /etc/nginx/conf.d/kidsproof-nl.sail.conf:2
+2025/07/17 18:06:26 [notice] 1#1: using the "epoll" event method
+2025/07/17 18:06:26 [notice] 1#1: nginx/1.28.0
+2025/07/17 18:06:26 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/17 18:06:26 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2025/07/17 18:06:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/17 18:06:26 [notice] 1#1: start worker processes
+2025/07/17 18:06:26 [notice] 1#1: start worker process 20
+2025/07/17 18:06:26 [notice] 1#1: start worker process 21
+2025/07/17 18:06:26 [notice] 1#1: start worker process 22
+2025/07/17 18:06:26 [notice] 1#1: start worker process 23
+2025/07/17 18:06:26 [notice] 1#1: start worker process 24
+2025/07/17 18:06:26 [notice] 1#1: start worker process 25
+2025/07/17 18:06:26 [notice] 1#1: start worker process 26
+2025/07/17 18:06:26 [notice] 1#1: start worker process 27
+2025/07/17 18:07:04 [error] 27#27: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:07:04 [error] 27#27: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:07:10 [error] 26#26: *26 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:07:10 [error] 26#26: *26 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:07:14 [error] 20#20: *28 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:07:14 [error] 20#20: *28 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:07:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/17 18:07:48 [notice] 20#20: gracefully shutting down
+2025/07/17 18:07:48 [notice] 25#25: gracefully shutting down
+2025/07/17 18:07:48 [notice] 22#22: gracefully shutting down
+2025/07/17 18:07:48 [notice] 20#20: exiting
+2025/07/17 18:07:48 [notice] 21#21: gracefully shutting down
+2025/07/17 18:07:48 [notice] 23#23: gracefully shutting down
+2025/07/17 18:07:48 [notice] 27#27: gracefully shutting down
+2025/07/17 18:07:48 [notice] 26#26: gracefully shutting down
+2025/07/17 18:07:48 [notice] 24#24: gracefully shutting down
+2025/07/17 18:07:48 [notice] 22#22: exiting
+2025/07/17 18:07:48 [notice] 25#25: exiting
+2025/07/17 18:07:48 [notice] 21#21: exiting
+2025/07/17 18:07:48 [notice] 24#24: exiting
+2025/07/17 18:07:48 [notice] 23#23: exiting
+2025/07/17 18:07:48 [notice] 25#25: exit
+2025/07/17 18:07:48 [notice] 27#27: exiting
+2025/07/17 18:07:48 [notice] 26#26: exiting
+2025/07/17 18:07:48 [notice] 20#20: exit
+2025/07/17 18:07:48 [notice] 22#22: exit
+2025/07/17 18:07:48 [notice] 21#21: exit
+2025/07/17 18:07:48 [notice] 24#24: exit
+2025/07/17 18:07:48 [notice] 23#23: exit
+2025/07/17 18:07:48 [notice] 27#27: exit
+2025/07/17 18:07:48 [notice] 26#26: exit
+2025/07/17 18:07:49 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2025/07/17 18:07:49 [notice] 1#1: worker process 20 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: worker process 21 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: worker process 22 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: worker process 25 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 18:07:49 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/07/17 18:07:49 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/07/17 18:07:49 [notice] 1#1: worker process 23 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: worker process 24 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: worker process 26 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: worker process 27 exited with code 0
+2025/07/17 18:07:49 [notice] 1#1: exit
+2025/07/17 18:07:49 [notice] 1#1: using the "epoll" event method
+2025/07/17 18:07:49 [notice] 1#1: nginx/1.28.0
+2025/07/17 18:07:49 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/17 18:07:49 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2025/07/17 18:07:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/17 18:07:49 [notice] 1#1: start worker processes
+2025/07/17 18:07:49 [notice] 1#1: start worker process 20
+2025/07/17 18:07:49 [notice] 1#1: start worker process 21
+2025/07/17 18:07:49 [notice] 1#1: start worker process 22
+2025/07/17 18:07:49 [notice] 1#1: start worker process 23
+2025/07/17 18:07:49 [notice] 1#1: start worker process 24
+2025/07/17 18:07:49 [notice] 1#1: start worker process 25
+2025/07/17 18:07:49 [notice] 1#1: start worker process 26
+2025/07/17 18:07:49 [notice] 1#1: start worker process 27
+2025/07/17 18:08:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/17 18:08:22 [notice] 20#20: gracefully shutting down
+2025/07/17 18:08:22 [notice] 24#24: gracefully shutting down
+2025/07/17 18:08:22 [notice] 23#23: gracefully shutting down
+2025/07/17 18:08:22 [notice] 21#21: gracefully shutting down
+2025/07/17 18:08:22 [notice] 25#25: gracefully shutting down
+2025/07/17 18:08:22 [notice] 27#27: gracefully shutting down
+2025/07/17 18:08:22 [notice] 26#26: gracefully shutting down
+2025/07/17 18:08:22 [notice] 22#22: gracefully shutting down
+2025/07/17 18:08:22 [notice] 24#24: exiting
+2025/07/17 18:08:22 [notice] 23#23: exiting
+2025/07/17 18:08:22 [notice] 20#20: exiting
+2025/07/17 18:08:22 [notice] 21#21: exiting
+2025/07/17 18:08:22 [notice] 27#27: exiting
+2025/07/17 18:08:22 [notice] 25#25: exiting
+2025/07/17 18:08:22 [notice] 22#22: exiting
+2025/07/17 18:08:22 [notice] 26#26: exiting
+2025/07/17 18:08:22 [notice] 20#20: exit
+2025/07/17 18:08:22 [notice] 21#21: exit
+2025/07/17 18:08:22 [notice] 22#22: exit
+2025/07/17 18:08:22 [notice] 26#26: exit
+2025/07/17 18:08:22 [notice] 25#25: exit
+2025/07/17 18:08:22 [notice] 27#27: exit
+2025/07/17 18:08:22 [notice] 23#23: exit
+2025/07/17 18:08:22 [notice] 24#24: exit
+2025/07/17 18:08:23 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/07/17 18:08:23 [notice] 1#1: worker process 20 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: worker process 21 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: worker process 23 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: worker process 24 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 18:08:23 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/07/17 18:08:23 [notice] 1#1: worker process 25 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: worker process 26 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: worker process 22 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: worker process 27 exited with code 0
+2025/07/17 18:08:23 [notice] 1#1: exit
+2025/07/17 18:08:23 [notice] 1#1: using the "epoll" event method
+2025/07/17 18:08:23 [notice] 1#1: nginx/1.28.0
+2025/07/17 18:08:23 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/17 18:08:23 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2025/07/17 18:08:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/17 18:08:23 [notice] 1#1: start worker processes
+2025/07/17 18:08:23 [notice] 1#1: start worker process 20
+2025/07/17 18:08:23 [notice] 1#1: start worker process 21
+2025/07/17 18:08:23 [notice] 1#1: start worker process 22
+2025/07/17 18:08:23 [notice] 1#1: start worker process 23
+2025/07/17 18:08:23 [notice] 1#1: start worker process 24
+2025/07/17 18:08:23 [notice] 1#1: start worker process 25
+2025/07/17 18:08:23 [notice] 1#1: start worker process 26
+2025/07/17 18:08:23 [notice] 1#1: start worker process 27
+2025/07/17 18:08:39 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/07/17 18:08:39 [notice] 20#20: gracefully shutting down
+2025/07/17 18:08:39 [notice] 21#21: gracefully shutting down
+2025/07/17 18:08:39 [notice] 23#23: gracefully shutting down
+2025/07/17 18:08:39 [notice] 22#22: gracefully shutting down
+2025/07/17 18:08:39 [notice] 25#25: gracefully shutting down
+2025/07/17 18:08:39 [notice] 24#24: gracefully shutting down
+2025/07/17 18:08:39 [notice] 26#26: gracefully shutting down
+2025/07/17 18:08:39 [notice] 24#24: exiting
+2025/07/17 18:08:39 [notice] 27#27: gracefully shutting down
+2025/07/17 18:08:39 [notice] 20#20: exiting
+2025/07/17 18:08:39 [notice] 21#21: exiting
+2025/07/17 18:08:39 [notice] 23#23: exiting
+2025/07/17 18:08:39 [notice] 22#22: exiting
+2025/07/17 18:08:39 [notice] 25#25: exiting
+2025/07/17 18:08:39 [notice] 26#26: exiting
+2025/07/17 18:08:39 [notice] 22#22: exit
+2025/07/17 18:08:39 [notice] 27#27: exiting
+2025/07/17 18:08:39 [notice] 24#24: exit
+2025/07/17 18:08:39 [notice] 27#27: exit
+2025/07/17 18:08:39 [notice] 23#23: exit
+2025/07/17 18:08:39 [notice] 20#20: exit
+2025/07/17 18:08:39 [notice] 21#21: exit
+2025/07/17 18:08:39 [notice] 26#26: exit
+2025/07/17 18:08:39 [notice] 25#25: exit
+2025/07/17 18:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/07/17 18:08:39 [notice] 1#1: worker process 22 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: worker process 26 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 18:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2025/07/17 18:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/07/17 18:08:39 [notice] 1#1: worker process 23 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: worker process 21 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: worker process 24 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: worker process 25 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: worker process 27 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/07/17 18:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2025/07/17 18:08:39 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2025/07/17 18:08:39 [notice] 1#1: worker process 20 exited with code 0
+2025/07/17 18:08:39 [notice] 1#1: exit
+2025/07/17 18:08:40 [notice] 1#1: using the "epoll" event method
+2025/07/17 18:08:40 [notice] 1#1: nginx/1.28.0
+2025/07/17 18:08:40 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2025/07/17 18:08:40 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2025/07/17 18:08:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2025/07/17 18:08:40 [notice] 1#1: start worker processes
+2025/07/17 18:08:40 [notice] 1#1: start worker process 20
+2025/07/17 18:08:40 [notice] 1#1: start worker process 21
+2025/07/17 18:08:40 [notice] 1#1: start worker process 22
+2025/07/17 18:08:40 [notice] 1#1: start worker process 23
+2025/07/17 18:08:40 [notice] 1#1: start worker process 24
+2025/07/17 18:08:40 [notice] 1#1: start worker process 25
+2025/07/17 18:08:40 [notice] 1#1: start worker process 26
+2025/07/17 18:08:40 [notice] 1#1: start worker process 27
+2025/07/17 18:08:57 [error] 20#20: *1 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "HEAD / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:08:59 [error] 21#21: *3 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:08:59 [error] 21#21: *3 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:09:17 [error] 25#25: *9 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:09:17 [error] 25#25: *9 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:09:56 [error] 23#23: *11 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:09:56 [error] 23#23: *11 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:10:04 [error] 24#24: *13 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:10:04 [error] 24#24: *13 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:10:31 [error] 26#26: *15 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:10:31 [error] 26#26: *15 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:11:17 [error] 27#27: *17 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:11:17 [error] 27#27: *17 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:11:31 [error] 20#20: *19 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:11:31 [error] 20#20: *19 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:12:32 [error] 20#20: *20 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:12:32 [error] 20#20: *20 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:13:30 [error] 20#20: *21 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:13:30 [error] 20#20: *21 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:13:36 [error] 20#20: *22 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:13:36 [error] 20#20: *22 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:13:37 [error] 20#20: *22 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:13:37 [error] 20#20: *22 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:13:40 [error] 20#20: *23 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:13:40 [error] 20#20: *23 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:14:52 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:14:52 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:15:57 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:15:57 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:16:23 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:16:23 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:16:31 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:16:31 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:16:56 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:16:57 [error] 20#20: *24 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:17:14 [error] 20#20: *25 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:17:14 [error] 20#20: *25 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:17:44 [error] 20#20: *26 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:17:44 [error] 20#20: *26 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:18:15 [error] 20#20: *27 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:18:15 [error] 20#20: *27 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:18:36 [error] 20#20: *28 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:18:36 [error] 20#20: *28 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:18:48 [error] 20#20: *29 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:18:48 [error] 20#20: *29 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:18:49 [error] 20#20: *29 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:18:49 [error] 20#20: *29 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:19:16 [error] 20#20: *30 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:19:16 [error] 20#20: *30 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:19:37 [error] 20#20: *31 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:19:37 [error] 20#20: *31 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:13 [error] 20#20: *32 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:13 [error] 20#20: *32 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:24 [error] 20#20: *33 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:24 [error] 20#20: *33 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:25 [error] 20#20: *33 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:25 [error] 20#20: *33 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:33 [error] 20#20: *34 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:33 [error] 20#20: *34 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:34 [error] 20#20: *34 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:34 [error] 20#20: *34 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:47 [error] 21#21: *35 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:47 [error] 21#21: *35 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:20:58 [error] 21#21: *36 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:20:58 [error] 21#21: *36 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:21:08 [error] 21#21: *37 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:21:08 [error] 21#21: *37 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"
+2025/07/17 18:21:43 [error] 21#21: *38 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET / HTTP/1.1", host: "kidsproof-nl.sail"
+2025/07/17 18:21:43 [error] 21#21: *38 nginx_kidsproof-nl could not be resolved (3: Host not found), client: 192.168.65.1, server: kidsproof-nl.sail, request: "GET /favicon.ico HTTP/1.1", host: "kidsproof-nl.sail", referrer: "https://kidsproof-nl.sail/"

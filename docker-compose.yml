@@ -8,6 +8,7 @@ services:
       - ./nginx_sites:/etc/nginx/conf.d
       - ./certs:/etc/nginx/certs:ro
       - ./logs/nginx:/var/log/nginx
+      - ./config/nginx/html:/etc/nginx/html:ro
     networks:
       - sailnet
     restart: unless-stopped

@@ -75,7 +75,7 @@ cert_dir="$root_dir/certs"
 
 pushd "$cert_dir" >/dev/null
 
-mkcert "$site_domain" >/dev/null
+mkcert "$site_domain" > /dev/null 2>&1
 cert_file=$(ls -t "$site_domain"*.pem | grep -v 'key' | head -n1)
 key_file=$(ls -t "$site_domain"*-key.pem | head -n1)
 
@@ -88,7 +88,7 @@ fi
 
 # Generate certificate for pma.$site_domain
 log_info "Adding pma.$site_domain to trusted certificate via mkcert..."
-mkcert "pma.$site_domain" >/dev/null
+mkcert "pma.$site_domain" > /dev/null 2>&1
 cert_file=$(ls -t "pma.$site_domain"*.pem | grep -v 'key' | head -n1)
 key_file=$(ls -t "pma.$site_domain"*-key.pem | head -n1)
 
@@ -109,5 +109,5 @@ else
 	log_info "$site_domain already exists in /etc/hosts."
 fi
 
-log_success "Site '$site_name_clean' added. You can now start the site by running 'sail site start' from within the site's directory."
-log_info "phpMyAdmin will be available at https://pma.$site_domain"
+log_success "Site '$site_name_clean' added. You can now start the site by running 'sail up' from within the site's directory."
+log_info "cd sites/$site_name_clean && sail up"
