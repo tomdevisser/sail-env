@@ -35,7 +35,7 @@ container_name="wp_$(echo $DOMAIN | sed 's/\.sail$//' | sed 's/[^a-z0-9]/-/g')"
 
 # Check if WordPress is installed
 log_info "Checking WordPress installation status..."
-if ! docker compose exec "$container_name" wp core is-installed --allow-root > /dev/null 2&>1; then
+if ! docker compose exec "$container_name" wp core is-installed --allow-root > /dev/null 2>&1; then
 	log_info "WordPress not installed. Installing with default values..."
 	
 	# Install WordPress with default values

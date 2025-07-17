@@ -8,6 +8,20 @@ root_dir="$(cd "$script_dir/../.." && pwd)"
 
 source "$root_dir/bin/lib/common.sh"
 
+# Display SAIL ASCII art
+echo -e "\033[0;36m"
+cat << 'EOF'
+           _ _
+ ___  __ _(_) |
+/ __|/ _` | | |
+\__ \ (_| | | |
+|___/\__,_|_|_|
+                               
+EOF
+echo -e "\033[0m"
+echo -e "\033[0;36mWelcome to SAIL - WordPress Development Environment\033[0m"
+echo ""
+
 cert_dir="$root_dir/certs"
 log_dir="$root_dir/logs/nginx"
 nginx_sites_dir="$root_dir/nginx_sites"
@@ -20,29 +34,29 @@ log_info "Checking folder structure..."
 mkdir -p "$cert_dir" "$log_dir" "$nginx_sites_dir"
 
 # Ensure mkcert is installed
-if ! command -v mkcert >/dev/null 2>&1; then
+if ! command -v mkcert > /dev/null 2>&1; then
   log_info "mkcert not found. Installing via Homebrew..."
-  brew install mkcert
+  brew install mkcert > /dev/null 2>&1
 fi
 
 ca_file="$HOME/Library/Application Support/mkcert/rootCA.pem"
 if [[ ! -f "$ca_file" ]]; then
   log_info "mkcert CA not found. Running mkcert -install..."
-  mkcert -install
+  mkcert -install > /dev/null 2>&1
 fi
 
 log_success "mkcert is ready and root CA is trusted."
 
 # Ensure Docker network
-if ! docker network inspect "$network_name" >/dev/null 2>&1; then
+if ! docker network inspect "$network_name" > /dev/null 2>&1; then
 	log_info "Creating Docker network '$network_name'"
-	docker network create "$network_name" >/dev/null 2>&1
+	docker network create "$network_name" > /dev/null 2>&1
 else
 	log_success "Docker network '$network_name' already exists."
 fi
 
 # Start reverse proxy
 log_info "Starting reverse proxy via Docker Compose..."
-docker compose -f "$docker_compose_file" up -d
+docker compose -f "$docker_compose_file" up -d > /dev/null 2>&1
 
 log_success "Sail system initialized. Ready to create and run sites."
