@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Terminate the script immediately if a command exits with an error
+set -e
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+command=$1
+
+shift || true
+
+function usage() {
+	echo "Usage: sail <command> [subcommand] [options]"
+	echo ""
+	echo "Available commands:"
+	echo "	init			Set up the reverse proxy and certs"
+	echo "	site add <name>		Create a new local site"
+	echo "	site remove <name>	Remove an existing site"
+	echo "	sync [--db] [--media] [--plugins] [--all]	Sync parts of a site (must be in site folder)"
+	exit 1
+}
+
+if [[ -z "$command" ]]; then
+	usage
+fi
+
+# Map the command to a subscript
+case "$command" in
+	init)
+		"$script_dir/cmd/init.sh" "$@"
+		;;
+	*)
+		echo "Unknown command: $command"
+		usage
+		;;
+esac

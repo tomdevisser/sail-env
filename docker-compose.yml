@@ -1,0 +1,20 @@
+services:
+  nginx:
+    image: nginx:stable
+    container_name: sail_proxy
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx_sites:/etc/nginx/conf.d
+      - ./certs/cert.pem:/etc/nginx/cert.pem:ro
+      - ./certs/key.pem:/etc/nginx/key.pem:ro
+      - ./logs/nginx:/var/log/nginx
+    networks:
+      - sailnet
+    restart: unless-stopped
+
+networks:
+  sailnet:
+    name: sailnet
+    driver: bridge
+    external: true
