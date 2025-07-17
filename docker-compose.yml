@@ -6,9 +6,17 @@ services:
       - "443:443"
     volumes:
       - ./nginx_sites:/etc/nginx/conf.d
-      - ./certs/cert.pem:/etc/nginx/cert.pem:ro
-      - ./certs/key.pem:/etc/nginx/key.pem:ro
+      - ./certs:/etc/nginx/certs:ro
       - ./logs/nginx:/var/log/nginx
+    networks:
+      - sailnet
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: sail_phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
     networks:
       - sailnet
     restart: unless-stopped

@@ -13,6 +13,8 @@ function usage() {
 	echo ""
 	echo "Available commands:"
 	echo "	init			Set up the reverse proxy and certs"
+	echo "	up			Start site containers (must be in site folder)"
+	echo "	down			Stop site containers (must be in site folder)"
 	echo "	site add <name>		Create a new local site"
 	echo "	site remove <name>	Remove an existing site"
 	echo "	sync [--db] [--media] [--plugins] [--all]	Sync parts of a site (must be in site folder)"
@@ -28,6 +30,33 @@ case "$command" in
 	init)
 		"$script_dir/cmd/init.sh" "$@"
 		;;
+	
+	up)
+		"$script_dir/cmd/up.sh" "$@"
+		;;
+	
+	down)
+		"$script_dir/cmd/down.sh" "$@"
+		;;
+	
+	site)
+		subcommand=$1
+		shift || true
+
+		case "$subcommand" in
+			add)
+				"$script_dir/cmd/site/add.sh" "$@"
+				;;
+			remove)
+				"$script_dir/cmd/site/remove.sh" "$@"
+				;;
+			*)
+				echo "Unknown site subcommand: $subcommand"
+				usage
+				;;
+		esac
+		;;
+
 	*)
 		echo "Unknown command: $command"
 		usage

@@ -1,0 +1,52 @@
+services:
+  nginx_$domain:
+    image: nginx:stable
+    container_name: nginx_$domain
+    depends_on:
+      - wp_$domain
+    volumes:
+      - wordpress_files:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - sailnet
+
+  wp_$domain:
+    build:
+      context: .
+      dockerfile: ../../dockerfiles/wp.Dockerfile
+      args:
+        INSTALL_XDEBUG: ${XDEBUG_ENABLED:-false}
+    container_name: wp_$domain
+    depends_on:
+      - db
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/custom
+      - ./plugins:/var/www/html/wp-content/plugins
+      - wordpress_files:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+    networks:
+      - sailnet
+
+  db:
+    image: mysql:8.0
+    container_name: db_$domain
+    volumes:
+      - ./database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    networks:
+      - sailnet
+
+networks:
+  sailnet:
+    external: true
+
+volumes:
+  wordpress_files:
