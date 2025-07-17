@@ -23,6 +23,7 @@ services:
       - ./theme:/var/www/html/wp-content/themes/custom
       - ./plugins:/var/www/html/wp-content/plugins
       - ./uploads:/var/www/html/wp-content/uploads
+      - ./xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - wordpress_files:/var/www/html
     environment:
       WORDPRESS_DB_HOST: db:3306

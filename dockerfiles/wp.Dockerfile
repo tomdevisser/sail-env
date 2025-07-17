@@ -14,5 +14,4 @@ RUN apt-get update && apt-get install -y \
 # Always install Xdebug (but don't enable it - let xdebug.ini handle it)
 RUN pecl install xdebug
 
-# Copy optional config (e.g., xdebug.ini)
-COPY ./xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+# Note: xdebug.ini is mounted as a volume at runtime
