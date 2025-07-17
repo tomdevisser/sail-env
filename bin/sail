@@ -15,9 +15,9 @@ function usage() {
 	echo "	init			Set up the reverse proxy and certs"
 	echo "	up			Start site containers (must be in site folder)"
 	echo "	down			Stop site containers (must be in site folder)"
+	echo "	sync [options]		Sync data from remote server (must be in site folder)"
 	echo "	site add <name>		Create a new local site"
 	echo "	site remove <name>	Remove an existing site"
-	echo "	sync [--db] [--media] [--plugins] [--all]	Sync parts of a site (must be in site folder)"
 	exit 1
 }
 
@@ -37,6 +37,10 @@ case "$command" in
 	
 	down)
 		"$script_dir/cmd/down.sh" "$@"
+		;;
+	
+	sync)
+		"$script_dir/cmd/sync.sh" "$@"
 		;;
 	
 	site)

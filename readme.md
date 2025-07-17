@@ -59,6 +59,7 @@ A containerized WordPress development environment using nginx + PHP-FPM architec
 | `init`               | Set up the reverse proxy and certificates       |
 | `up`                 | Start site containers (run from site directory) |
 | `down`               | Stop site containers (run from site directory)  |
+| `sync [options]`     | Sync data from remote server (run from site directory) |
 | `site add <name>`    | Create a new WordPress site                     |
 | `site remove <name>` | Remove an existing site                         |
 
@@ -84,8 +85,12 @@ cd sites/mysite
 ../../bin/sail up
 ```
 
-Your site will be available at:
+This will:
+- Start all containers (nginx, WordPress, database)
+- Automatically install WordPress with default credentials if not installed
+- Default login: `admin` / `admin`
 
+Your site will be available at:
 - **WordPress**: https://mysite.sail
 - **phpMyAdmin**: https://pma.mysite.sail
 

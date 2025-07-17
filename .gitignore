@@ -12,6 +12,15 @@ sites/*
 !sites/readme.md
 !sites/example/
 
+# Uploads and media files
+uploads/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.pdf
+*.zip
+
 # Logs
 logs/
 *.log

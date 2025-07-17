@@ -26,6 +26,33 @@ fi
 log_info "Starting site for $DOMAIN..."
 docker compose up -d
 
+# Wait for containers to be ready
+log_info "Waiting for containers to start..."
+sleep 5
+
+# Get container name for this site
+container_name="wp_$(echo $DOMAIN | sed 's/\.sail$//' | sed 's/[^a-z0-9]/-/g')"
+
+# Check if WordPress is installed
+log_info "Checking WordPress installation status..."
+if ! docker compose exec "$container_name" wp core is-installed --allow-root 2>/dev/null; then
+	log_info "WordPress not installed. Installing with default values..."
+	
+	# Install WordPress with default values
+	docker compose exec "$container_name" wp core install \
+		--url="https://$DOMAIN" \
+		--title="$DOMAIN - Development Site" \
+		--admin_user="admin" \
+		--admin_password="admin" \
+		--admin_email="admin@$DOMAIN" \
+		--allow-root
+	
+	log_success "WordPress installed with default credentials (admin/admin)"
+	log_info "Note: These credentials will be overwritten when you run 'sail sync --db'"
+else
+	log_info "WordPress already installed"
+fi
+
 # Restart the main nginx proxy to reload configurations
 log_info "Restarting nginx proxy to reload configurations..."
 docker restart sail_proxy > /dev/null 2>&1
