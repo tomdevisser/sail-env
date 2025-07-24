@@ -129,7 +129,7 @@ trap "rm -rf $temp_dir" EXIT
 
 # Get remote domain for search/replace
 log_info "Getting remote domain..."
-remote_domain=$(sshpass -p "$REMOTE_PASS" ssh -p "$REMOTE_PORT" "$REMOTE_USER@$REMOTE_HOST" "cd $REMOTE_PATH && wp option get siteurl --allow-root" 2>/dev/null | sed 's|https\?://||' | sed 's|/.*||')
+remote_domain=$(sshpass -p "$REMOTE_PASS" ssh -p "$REMOTE_PORT" "$REMOTE_USER@$REMOTE_HOST" "cd $REMOTE_PATH && wp option get siteurl --allow-root 2>/dev/null | sed 's|https\\?://||' | sed 's|/.*||'")
 
 if [[ -z "$remote_domain" ]]; then
 	log_error "Could not get remote domain. Make sure WP-CLI is installed on the remote server."

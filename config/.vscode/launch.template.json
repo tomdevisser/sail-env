@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen for Xdebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9003,
+      "pathMappings": {
+        "/var/www/html/wp-content/themes/custom": "${workspaceFolder}/theme"
+      },
+      "xdebugSettings": {
+        "max_children": 128,
+        "max_data": 1024,
+        "max_depth": 3
+      },
+      "log": true,
+      "hostname": "0.0.0.0",
+      "ignore": [
+        "**/wp-admin/**",
+        "**/wp-includes/**",
+        "**/wp-content/plugins/**",
+        "**/vendor/**"
+      ]
+    }
+  ]
+}
